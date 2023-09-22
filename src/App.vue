@@ -47,5 +47,24 @@ const div = () => {
 </template>
 
 <style scoped>
+  .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
+  width: 100vw;
+  height: 100vh;
+
+  padding: 0;
+  padding-bottom: 196px;
+
+}
+
+.background-calculator {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 56px;
+  background-color: #E66378;
+}
 </style>
