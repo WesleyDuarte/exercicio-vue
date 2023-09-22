@@ -34,7 +34,13 @@ const div = () => {
 </script>
 
 <template>
-  <h1>ola</h1>
+  <div class="container">
+    <div class="background-calculator">
+      <Cabecalho />
+      <Formulario :valorPrimeiroInput="event => state.num1 = Number(event.target.value)" :valorSegundoInput="event => state.num2 = Number(event.target.value)" :filtro="state.filtro" :selecionaFiltro="event => state.filtro = event.target.value"/>
+      <Resultado :filtro="state.filtro" :funcaoSoma="sum()" :funcaoSub="sub()" :funcaoMult="mult()" :funcaoDivisao="div()" />
+    </div>
+  </div>
 </template>
 
 <style scoped>
